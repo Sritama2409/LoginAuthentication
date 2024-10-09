@@ -1,0 +1,98 @@
+/* Page background styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #6a0dad; /* Purple background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login box styling */
+.login-box {
+    width: 320px;
+    padding: 40px;
+    background-color: #ffcccb; /* Light pink box */
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    color: #ff1493; /* Deep pink for the "Login" heading */
+}
+
+/* Username and password field styling */
+.user-box {
+    position: relative;
+}
+
+.user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #ff1493; /* Deep pink border */
+    background: transparent;
+    outline: none;
+}
+
+.user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ff1493; /* Deep pink label text */
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+}
+
+/* Login button styling */
+button {
+    background-color: #6a0dad; /* Purple button */
+    border: none;
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #7b1fa2;
+}
+
+/* Options below login form */
+.options {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.options a {
+    display: block;
+    color: #ff1493; /* Deep pink text for links */
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.options a:hover {
+    opacity: 1;
+}
